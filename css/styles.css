@@ -28,32 +28,32 @@ body {
   padding: 0 15px;
 }
 
-.top {
+.contacts {
   display: flex;
 }
-.header-top {
+.header-global--wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 24px 0 25px 0;
 }
-.header-border {
+.header-global--border {
   border-bottom: 1px solid var(--border-color);
 }
-.link-style:first-child {
+.navigation-links--style:first-child {
   margin-left: 0px;
 }
-.link-style:last-child {
+.navigation-links--style:last-child {
   margin-right: 0px;
 }
 
-.top-links {
+.navigation-links {
   display: flex;
   margin-left: 94px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link::after {
+.navigation-links--current::after {
   content: "";
   background-color: var(--brand-color);
   width: 53px;
@@ -64,18 +64,7 @@ body {
   position: absolute;
 }
 
-.agencja-link::after {
-  content: "";
-  background-color: var(--brand-color);
-  width: 53px;
-  height: 4px;
-  border-radius: 2px;
-  display: block;
-  margin-top: 28px;
-  position: absolute;
-}
-
-.logo-and-links {
+.header-global--style {
   display: flex;
   align-items: center;
 }
@@ -141,18 +130,18 @@ ul {
   color: var(--normal-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-white {
+.footer-global__address-style--link-white {
   color: var(--background-white);
   text-decoration: none;
   font-size: 14px;
 }
-.link-grey {
+.footer-global__address-style--link-grey {
   color: var(--link-white-transparency);
   text-decoration: none;
   font-size: 14px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-contact {
+.contacts__link {
   text-decoration: none;
   color: var(--grey);
   font-weight: 500;
@@ -166,10 +155,10 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-contact:first-child {
+.contacts__link:first-child {
   margin-left: 0;
 }
-.link-contact:last-child {
+.contacts__link:last-child {
   margin-right: 0;
 }
 
@@ -177,7 +166,7 @@ ul {
   color: var(--brand-color);
 }
 
-.top-links:is(:hover, :focus) {
+.navigation-links:is(:hover, :focus) {
   color: var(--brand-color);
 }
 
@@ -185,7 +174,7 @@ ul {
   color: var(--brand-color);
 }
 
-.link-contact:is(:hover, :focus) {
+.contacts__link:is(:hover, :focus) {
   color: var(--brand-color);
 }
 
@@ -193,29 +182,29 @@ ul {
   margin-right: 10px;
 }
 
-.link-style {
+.navigation-links--style {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
   margin: 0 23px;
 }
 
-.logo {
+.logo-style {
   font-weight: 700;
   font-size: 26px;
   font-family: "Raleway", sans-serif;
   line-height: 1.17;
 }
 
-.studio-black {
+.logo-style--studio-black {
   color: var(--black);
 }
 
-.studio-white {
+.logo-style--studio-color {
   color: var(--background-white);
 }
 
-.web-color {
+.logo-style--web-color {
   color: var(--brand-color);
 }
 
@@ -574,13 +563,13 @@ ul {
   line-height: 1.71;
   text-align: center;
 }
-.footer-style {
+.footer-global {
   background-color: var(--main-background);
   padding: 60px 0 60px 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-style {
+.footer-global__address-style {
   font-style: normal;
   line-height: 1.71;
   padding-top: 20px;
@@ -607,13 +596,13 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.footer-style > .container {
+.footer-global > .container {
   display: flex;
   gap: 70px;
   align-items: baseline;
 }
 
-.footer-social-links-list {
+.join-us__link-list {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -621,7 +610,7 @@ ul {
   margin-top: 20px;
 }
 
-.footer-social-link {
+.join-us__link-list--link-style {
   fill: var(--background-white);
   display: flex;
   justify-content: center;
@@ -706,11 +695,11 @@ ul {
   display: block;
 }
 
-.brand-color-link {
+.navigation-links--current {
   color: var(--brand-color);
 }
 
-.newsletter-input {
+.newsletter__input {
   padding: 15px;
   margin-top: 20px;
   background-color: var(--main-background);
@@ -730,7 +719,7 @@ ul {
   border-color: var(--brand-color);
 }
 
-.footer-newsletter {
+.newsletter__label {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -738,7 +727,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.newsletter-button {
+.newsletter__btn {
   box-sizing: border-box;
   background-color: var(--brand-color);
   width: 200px;

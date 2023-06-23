@@ -71,82 +71,103 @@
     </header>
     <main>
       <section>
-        <div class="main-header">
-          <h1 class="title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button" class="order-button" data-modal-open>
+        <div class="main-section">
+          <h1 class="main-section__title">
+            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          </h1>
+          <button
+            type="button"
+            class="main-section__order-button"
+            data-modal-open
+          >
             Zamów usługę
           </button>
         </div>
         <div class="modal is-hidden" data-modal>
-          <div class="window-modal">
-            <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
-            <button class="button-close" type="button" data-modal-close>
+          <div class="modal__window">
+            <p class="modal__form-title">
+              Zostaw swoje dane w formularzu poniżej
+            </p>
+            <button class="modal__button-close" type="button" data-modal-close>
               <svg width="11" height="11">
                 <use href="./images/icons.svg#icon-vv"></use>
               </svg>
             </button>
-            <form class="contact-form" name="contact-form" autocomplete="on">
-              <div class="input-class">
+            <form
+              class="modal__contact-form"
+              name="contact-form"
+              autocomplete="on"
+            >
+              <div class="modal__input-wrap">
                 <label for="name">Imię</label>
-                <label class="input-box">
+                <label class="modal__input-window">
                   <svg width="12" height="12">
                     <use href="./images/icons.svg#icon-man"></use>
                   </svg>
-                  <input class="input-form" id="name" type="text" name="name" />
+                  <input
+                    class="modal__input-window--border"
+                    id="name"
+                    type="text"
+                    name="name"
+                  />
                 </label>
               </div>
-              <div class="input-class">
+              <div class="modal__input-wrap">
                 <label for="phone-number">Telefon</label>
-                <label class="input-box">
+                <label class="modal__input-window">
                   <svg width="13" height="13">
                     <use href="./images/icons.svg#icon-icon-phone"></use>
                   </svg>
                   <input
-                    class="input-form"
+                    class="modal__input-window--border"
                     id="phone-number"
                     type="tel"
                     name="phone-number"
                   />
                 </label>
               </div>
-              <div class="input-class">
+              <div class="modal__input-wrap">
                 <label for="email"> Email</label>
-                <label class="input-box">
+                <label class="modal__input-window">
                   <svg class="" width="15" height="12">
                     <use href="./images/icons.svg#icon-icon-email"></use>
                   </svg>
                   <input
-                    class="input-form"
+                    class="modal__input-window--border"
                     id="email"
                     type="email"
                     name="email"
                   />
                 </label>
               </div>
-              <div class="input-class">
+              <div class="modal__input-wrap">
                 <label for="comment"> Komentarz</label>
                 <textarea
-                  class="textarea-comment"
+                  class="modal__textarea"
                   id="comment"
                   name="comment"
                   placeholder="Wprowadź tekst"
                 ></textarea>
               </div>
               <div>
-                <label class="agreement-form">
-                  <input class="hidden-checkbox" type="checkbox" />
-                  <div class="custom-checkbox">
-                    <svg class="custom-checkbox-img" height="16px" width="16px">
+                <label class="modal__agreement-form-wrapper">
+                  <input class="modal__hidden-checkbox" type="checkbox" />
+                  <div class="modal__custom-checkbox">
+                    <svg
+                      class="modal__custom-checkbox-svg"
+                      height="16px"
+                      width="16px"
+                    >
                       <use href="./images/icons.svg#icon-checked"></use>
                     </svg>
                   </div>
-                  <span class="agreement-text"
+                  <span class="modal__agreement-text"
                     >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
                     <a href="#">Politykę Prywatności.</a></span
                   >
                 </label>
               </div>
-              <button class="form-send-button" type="submit">Wyślij</button>
+              <button class="modal__button-send" type="submit">Wyślij</button>
             </form>
           </div>
         </div>

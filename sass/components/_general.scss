@@ -48,3 +48,12 @@ ul {
 .is-hidden .modal {
   transform: scale(0);
 }
+
+.headline {
+  font-weight: 700;
+  color: var(--normal-color);
+  font-size: 36px;
+  line-height: 1.71;
+  text-align: center;
+  padding-bottom: 50px;
+}

@@ -1,0 +1,30 @@
+.occupation {
+  &__list {
+    position: relative;
+    display: inline-flex;
+  }
+
+  &__description {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--background-white);
+    position: absolute;
+    background-color: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    padding: 27px;
+  }
+
+  &--flex {
+    display: flex;
+    gap: 30px;
+  }
+
+  &--margin {
+    margin-top: -94px;
+  }
+}

@@ -1,0 +1,15 @@
+.header-global {
+  &--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0 25px 0;
+  }
+  &--border {
+    border-bottom: 1px solid var(--border-color);
+  }
+  &--style {
+    display: flex;
+    align-items: center;
+  }
+}

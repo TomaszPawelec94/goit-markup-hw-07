@@ -1,0 +1,23 @@
+.advantages {
+  display: flex;
+  gap: 30px;
+
+  &__descrtiption {
+    color: var(--grey);
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  &__title {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  &__icon {
+    background-color: rgba(245, 244, 250, 1);
+    border-radius: 4px;
+    box-sizing: content-box;
+    padding: 25px 102.34px;
+    margin-bottom: 30px;
+  }
+}
